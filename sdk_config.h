@@ -46,6 +46,516 @@
 #ifdef USE_APP_CONFIG
 #include "app_config.h"
 #endif
+
+//==========================================================
+// <o> I2S_SDIN_PIN  - Pin number
+ 
+// <0=> 0 (P0.0) 
+// <1=> 1 (P0.1) 
+// <2=> 2 (P0.2) 
+// <3=> 3 (P0.3) 
+// <4=> 4 (P0.4) 
+// <5=> 5 (P0.5) 
+// <6=> 6 (P0.6) 
+// <7=> 7 (P0.7) 
+// <8=> 8 (P0.8) 
+// <9=> 9 (P0.9) 
+// <10=> 10 (P0.10) 
+// <11=> 11 (P0.11) 
+// <12=> 12 (P0.12) 
+// <13=> 13 (P0.13) 
+// <14=> 14 (P0.14) 
+// <15=> 15 (P0.15) 
+// <16=> 16 (P0.16) 
+// <17=> 17 (P0.17) 
+// <18=> 18 (P0.18) 
+// <19=> 19 (P0.19) 
+// <20=> 20 (P0.20) 
+// <21=> 21 (P0.21) 
+// <22=> 22 (P0.22) 
+// <23=> 23 (P0.23) 
+// <24=> 24 (P0.24) 
+// <25=> 25 (P0.25) 
+// <26=> 26 (P0.26) 
+// <27=> 27 (P0.27) 
+// <28=> 28 (P0.28) 
+// <29=> 29 (P0.29) 
+// <30=> 30 (P0.30) 
+// <31=> 31 (P0.31) 
+// <32=> 32 (P1.0) 
+// <33=> 33 (P1.1) 
+// <34=> 34 (P1.2) 
+// <35=> 35 (P1.3) 
+// <36=> 36 (P1.4) 
+// <37=> 37 (P1.5) 
+// <38=> 38 (P1.6) 
+// <39=> 39 (P1.7) 
+// <40=> 40 (P1.8) 
+// <41=> 41 (P1.9) 
+// <42=> 42 (P1.10) 
+// <43=> 43 (P1.11) 
+// <44=> 44 (P1.12) 
+// <45=> 45 (P1.13) 
+// <46=> 46 (P1.14) 
+// <47=> 47 (P1.15) 
+// <4294967295=> Not connected 
+
+#ifndef I2S_SDIN_PIN
+#define I2S_SDIN_PIN 26
+#endif
+
+// <o> I2S_SDOUT_PIN  - Pin number
+ 
+// <0=> 0 (P0.0) 
+// <1=> 1 (P0.1) 
+// <2=> 2 (P0.2) 
+// <3=> 3 (P0.3) 
+// <4=> 4 (P0.4) 
+// <5=> 5 (P0.5) 
+// <6=> 6 (P0.6) 
+// <7=> 7 (P0.7) 
+// <8=> 8 (P0.8) 
+// <9=> 9 (P0.9) 
+// <10=> 10 (P0.10) 
+// <11=> 11 (P0.11) 
+// <12=> 12 (P0.12) 
+// <13=> 13 (P0.13) 
+// <14=> 14 (P0.14) 
+// <15=> 15 (P0.15) 
+// <16=> 16 (P0.16) 
+// <17=> 17 (P0.17) 
+// <18=> 18 (P0.18) 
+// <19=> 19 (P0.19) 
+// <20=> 20 (P0.20) 
+// <21=> 21 (P0.21) 
+// <22=> 22 (P0.22) 
+// <23=> 23 (P0.23) 
+// <24=> 24 (P0.24) 
+// <25=> 25 (P0.25) 
+// <26=> 26 (P0.26) 
+// <27=> 27 (P0.27) 
+// <28=> 28 (P0.28) 
+// <29=> 29 (P0.29) 
+// <30=> 30 (P0.30) 
+// <31=> 31 (P0.31) 
+// <32=> 32 (P1.0) 
+// <33=> 33 (P1.1) 
+// <34=> 34 (P1.2) 
+// <35=> 35 (P1.3) 
+// <36=> 36 (P1.4) 
+// <37=> 37 (P1.5) 
+// <38=> 38 (P1.6) 
+// <39=> 39 (P1.7) 
+// <40=> 40 (P1.8) 
+// <41=> 41 (P1.9) 
+// <42=> 42 (P1.10) 
+// <43=> 43 (P1.11) 
+// <44=> 44 (P1.12) 
+// <45=> 45 (P1.13) 
+// <46=> 46 (P1.14) 
+// <47=> 47 (P1.15) 
+// <4294967295=> Not connected 
+
+#ifndef I2S_SDOUT_PIN
+#define I2S_SDOUT_PIN 27
+#endif
+
+// </h> 
+//==========================================================
+
+// <h> nRF_Drivers 
+
+//==========================================================
+// <e> I2S_ENABLED - nrf_drv_i2s - I2S peripheral driver - legacy layer
+//==========================================================
+#ifndef I2S_ENABLED
+#define I2S_ENABLED 1
+#endif
+// <o> I2S_CONFIG_SCK_PIN - SCK pin  <0-31> 
+
+
+#ifndef I2S_CONFIG_SCK_PIN
+#define I2S_CONFIG_SCK_PIN 31
+#endif
+
+// <o> I2S_CONFIG_LRCK_PIN - LRCK pin  <1-31> 
+
+
+#ifndef I2S_CONFIG_LRCK_PIN
+#define I2S_CONFIG_LRCK_PIN 30
+#endif
+
+// <o> I2S_CONFIG_MCK_PIN - MCK pin 
+#ifndef I2S_CONFIG_MCK_PIN
+#define I2S_CONFIG_MCK_PIN 255
+#endif
+
+// <o> I2S_CONFIG_SDOUT_PIN - SDOUT pin  <0-31> 
+
+
+#ifndef I2S_CONFIG_SDOUT_PIN
+#define I2S_CONFIG_SDOUT_PIN 29
+#endif
+
+// <o> I2S_CONFIG_SDIN_PIN - SDIN pin  <0-31> 
+
+
+#ifndef I2S_CONFIG_SDIN_PIN
+#define I2S_CONFIG_SDIN_PIN 28
+#endif
+
+// <o> I2S_CONFIG_MASTER  - Mode
+ 
+// <0=> Master 
+// <1=> Slave 
+
+#ifndef I2S_CONFIG_MASTER
+#define I2S_CONFIG_MASTER 0
+#endif
+
+// <o> I2S_CONFIG_FORMAT  - Format
+ 
+// <0=> I2S 
+// <1=> Aligned 
+
+#ifndef I2S_CONFIG_FORMAT
+#define I2S_CONFIG_FORMAT 0
+#endif
+
+// <o> I2S_CONFIG_ALIGN  - Alignment
+ 
+// <0=> Left 
+// <1=> Right 
+
+#ifndef I2S_CONFIG_ALIGN
+#define I2S_CONFIG_ALIGN 0
+#endif
+
+// <o> I2S_CONFIG_SWIDTH  - Sample width (bits)
+ 
+// <0=> 8 
+// <1=> 16 
+// <2=> 24 
+
+#ifndef I2S_CONFIG_SWIDTH
+#define I2S_CONFIG_SWIDTH 1
+#endif
+
+// <o> I2S_CONFIG_CHANNELS  - Channels
+ 
+// <0=> Stereo 
+// <1=> Left 
+// <2=> Right 
+
+#ifndef I2S_CONFIG_CHANNELS
+#define I2S_CONFIG_CHANNELS 1
+#endif
+
+// <o> I2S_CONFIG_MCK_SETUP  - MCK behavior
+ 
+// <0=> Disabled 
+// <2147483648=> 32MHz/2 
+// <1342177280=> 32MHz/3 
+// <1073741824=> 32MHz/4 
+// <805306368=> 32MHz/5 
+// <671088640=> 32MHz/6 
+// <536870912=> 32MHz/8 
+// <402653184=> 32MHz/10 
+// <369098752=> 32MHz/11 
+// <285212672=> 32MHz/15 
+// <268435456=> 32MHz/16 
+// <201326592=> 32MHz/21 
+// <184549376=> 32MHz/23 
+// <142606336=> 32MHz/30 
+// <138412032=> 32MHz/31 
+// <134217728=> 32MHz/32 
+// <100663296=> 32MHz/42 
+// <68157440=> 32MHz/63 
+// <34340864=> 32MHz/125 
+
+#ifndef I2S_CONFIG_MCK_SETUP
+#define I2S_CONFIG_MCK_SETUP 536870912
+#endif
+
+// <o> I2S_CONFIG_RATIO  - MCK/LRCK ratio
+ 
+// <0=> 32x 
+// <1=> 48x 
+// <2=> 64x 
+// <3=> 96x 
+// <4=> 128x 
+// <5=> 192x 
+// <6=> 256x 
+// <7=> 384x 
+// <8=> 512x 
+
+#ifndef I2S_CONFIG_RATIO
+#define I2S_CONFIG_RATIO 2000
+#endif
+
+// <o> I2S_CONFIG_IRQ_PRIORITY  - Interrupt priority
+ 
+
+// <i> Priorities 0,2 (nRF51) and 0,1,4,5 (nRF52) are reserved for SoftDevice
+// <0=> 0 (highest) 
+// <1=> 1 
+// <2=> 2 
+// <3=> 3 
+// <4=> 4 
+// <5=> 5 
+// <6=> 6 
+// <7=> 7 
+
+#ifndef I2S_CONFIG_IRQ_PRIORITY
+#define I2S_CONFIG_IRQ_PRIORITY 6
+#endif
+
+// <e> I2S_CONFIG_LOG_ENABLED - Enables logging in the module.
+//==========================================================
+#ifndef I2S_CONFIG_LOG_ENABLED
+#define I2S_CONFIG_LOG_ENABLED 0
+#endif
+// <o> I2S_CONFIG_LOG_LEVEL  - Default Severity level
+ 
+// <0=> Off 
+// <1=> Error 
+// <2=> Warning 
+// <3=> Info 
+// <4=> Debug 
+
+#ifndef I2S_CONFIG_LOG_LEVEL
+#define I2S_CONFIG_LOG_LEVEL 3
+#endif
+
+// <o> I2S_CONFIG_INFO_COLOR  - ANSI escape code prefix.
+ 
+// <0=> Default 
+// <1=> Black 
+// <2=> Red 
+// <3=> Green 
+// <4=> Yellow 
+// <5=> Blue 
+// <6=> Magenta 
+// <7=> Cyan 
+// <8=> White 
+
+#ifndef I2S_CONFIG_INFO_COLOR
+#define I2S_CONFIG_INFO_COLOR 0
+#endif
+
+// <o> I2S_CONFIG_DEBUG_COLOR  - ANSI escape code prefix.
+ 
+// <0=> Default 
+// <1=> Black 
+// <2=> Red 
+// <3=> Green 
+// <4=> Yellow 
+// <5=> Blue 
+// <6=> Magenta 
+// <7=> Cyan 
+// <8=> White 
+
+#ifndef I2S_CONFIG_DEBUG_COLOR
+#define I2S_CONFIG_DEBUG_COLOR 0
+#endif
+
+// </e>
+
+// </e>
+
+// <e> NRFX_I2S_ENABLED - nrfx_i2s - I2S peripheral driver
+//==========================================================
+#ifndef NRFX_I2S_ENABLED
+#define NRFX_I2S_ENABLED 1
+#endif
+// <o> NRFX_I2S_CONFIG_SCK_PIN - SCK pin  <0-31> 
+
+
+#ifndef NRFX_I2S_CONFIG_SCK_PIN
+#define NRFX_I2S_CONFIG_SCK_PIN 31
+#endif
+
+// <o> NRFX_I2S_CONFIG_LRCK_PIN - LRCK pin  <1-31> 
+
+
+#ifndef NRFX_I2S_CONFIG_LRCK_PIN
+#define NRFX_I2S_CONFIG_LRCK_PIN 30
+#endif
+
+// <o> NRFX_I2S_CONFIG_MCK_PIN - MCK pin 
+#ifndef NRFX_I2S_CONFIG_MCK_PIN
+#define NRFX_I2S_CONFIG_MCK_PIN 255
+#endif
+
+// <o> NRFX_I2S_CONFIG_SDOUT_PIN - SDOUT pin  <0-31> 
+
+
+#ifndef NRFX_I2S_CONFIG_SDOUT_PIN
+#define NRFX_I2S_CONFIG_SDOUT_PIN 29
+#endif
+
+// <o> NRFX_I2S_CONFIG_SDIN_PIN - SDIN pin  <0-31> 
+
+
+#ifndef NRFX_I2S_CONFIG_SDIN_PIN
+#define NRFX_I2S_CONFIG_SDIN_PIN 28
+#endif
+
+// <o> NRFX_I2S_CONFIG_MASTER  - Mode
+ 
+// <0=> Master 
+// <1=> Slave 
+
+#ifndef NRFX_I2S_CONFIG_MASTER
+#define NRFX_I2S_CONFIG_MASTER 0
+#endif
+
+// <o> NRFX_I2S_CONFIG_FORMAT  - Format
+ 
+// <0=> I2S 
+// <1=> Aligned 
+
+#ifndef NRFX_I2S_CONFIG_FORMAT
+#define NRFX_I2S_CONFIG_FORMAT 0
+#endif
+
+// <o> NRFX_I2S_CONFIG_ALIGN  - Alignment
+ 
+// <0=> Left 
+// <1=> Right 
+
+#ifndef NRFX_I2S_CONFIG_ALIGN
+#define NRFX_I2S_CONFIG_ALIGN 0
+#endif
+
+// <o> NRFX_I2S_CONFIG_SWIDTH  - Sample width (bits)
+ 
+// <0=> 8 
+// <1=> 16 
+// <2=> 24 
+
+#ifndef NRFX_I2S_CONFIG_SWIDTH
+#define NRFX_I2S_CONFIG_SWIDTH 1
+#endif
+
+// <o> NRFX_I2S_CONFIG_CHANNELS  - Channels
+ 
+// <0=> Stereo 
+// <1=> Left 
+// <2=> Right 
+
+#ifndef NRFX_I2S_CONFIG_CHANNELS
+#define NRFX_I2S_CONFIG_CHANNELS 1
+#endif
+
+// <o> NRFX_I2S_CONFIG_MCK_SETUP  - MCK behavior
+ 
+// <0=> Disabled 
+// <2147483648=> 32MHz/2 
+// <1342177280=> 32MHz/3 
+// <1073741824=> 32MHz/4 
+// <805306368=> 32MHz/5 
+// <671088640=> 32MHz/6 
+// <536870912=> 32MHz/8 
+// <402653184=> 32MHz/10 
+// <369098752=> 32MHz/11 
+// <285212672=> 32MHz/15 
+// <268435456=> 32MHz/16 
+// <201326592=> 32MHz/21 
+// <184549376=> 32MHz/23 
+// <142606336=> 32MHz/30 
+// <138412032=> 32MHz/31 
+// <134217728=> 32MHz/32 
+// <100663296=> 32MHz/42 
+// <68157440=> 32MHz/63 
+// <34340864=> 32MHz/125 
+
+#ifndef NRFX_I2S_CONFIG_MCK_SETUP
+#define NRFX_I2S_CONFIG_MCK_SETUP 536870912
+#endif
+
+// <o> NRFX_I2S_CONFIG_RATIO  - MCK/LRCK ratio
+ 
+// <0=> 32x 
+// <1=> 48x 
+// <2=> 64x 
+// <3=> 96x 
+// <4=> 128x 
+// <5=> 192x 
+// <6=> 256x 
+// <7=> 384x 
+// <8=> 512x 
+
+#ifndef NRFX_I2S_CONFIG_RATIO
+#define NRFX_I2S_CONFIG_RATIO 2000
+#endif
+
+// <o> NRFX_I2S_CONFIG_IRQ_PRIORITY  - Interrupt priority
+ 
+// <0=> 0 (highest) 
+// <1=> 1 
+// <2=> 2 
+// <3=> 3 
+// <4=> 4 
+// <5=> 5 
+// <6=> 6 
+// <7=> 7 
+
+#ifndef NRFX_I2S_CONFIG_IRQ_PRIORITY
+#define NRFX_I2S_CONFIG_IRQ_PRIORITY 6
+#endif
+
+// <e> NRFX_I2S_CONFIG_LOG_ENABLED - Enables logging in the module.
+//==========================================================
+#ifndef NRFX_I2S_CONFIG_LOG_ENABLED
+#define NRFX_I2S_CONFIG_LOG_ENABLED 0
+#endif
+// <o> NRFX_I2S_CONFIG_LOG_LEVEL  - Default Severity level
+ 
+// <0=> Off 
+// <1=> Error 
+// <2=> Warning 
+// <3=> Info 
+// <4=> Debug 
+
+#ifndef NRFX_I2S_CONFIG_LOG_LEVEL
+#define NRFX_I2S_CONFIG_LOG_LEVEL 3
+#endif
+
+// <o> NRFX_I2S_CONFIG_INFO_COLOR  - ANSI escape code prefix.
+ 
+// <0=> Default 
+// <1=> Black 
+// <2=> Red 
+// <3=> Green 
+// <4=> Yellow 
+// <5=> Blue 
+// <6=> Magenta 
+// <7=> Cyan 
+// <8=> White 
+
+#ifndef NRFX_I2S_CONFIG_INFO_COLOR
+#define NRFX_I2S_CONFIG_INFO_COLOR 0
+#endif
+
+// <o> NRFX_I2S_CONFIG_DEBUG_COLOR  - ANSI escape code prefix.
+ 
+// <0=> Default 
+// <1=> Black 
+// <2=> Red 
+// <3=> Green 
+// <4=> Yellow 
+// <5=> Blue 
+// <6=> Magenta 
+// <7=> Cyan 
+// <8=> White 
+
+#ifndef NRFX_I2S_CONFIG_DEBUG_COLOR
+#define NRFX_I2S_CONFIG_DEBUG_COLOR 0
+#endif
+
+// </e>
+
 // <h> nRF_BLE 
 
 //==========================================================

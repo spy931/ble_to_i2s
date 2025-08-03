@@ -23,12 +23,6 @@ ret_code_t SoundPlayer_Init();
 ret_code_t SoundPlayer_OpenWAV(WavHeader_Struct* wav_ptr);
 
 /**
- * @brief Closes the currently opened sound file.
- * @return 0 on success, error code otherwise.
- */
-ret_code_t SoundPlayer_Close();
-
-/**
  * @brief Starts playback of the opened sound file.
  * @return 0 on success, error code otherwise.
  */

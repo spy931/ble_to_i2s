@@ -3,14 +3,15 @@
  * @brief WAV audio database structures and access functions.
  *
  * This header defines structures and functions for managing and accessing
- * a database of WAV audio files, including their headers and associated metadata.
+ * a database of WAV audio files, including their headers and associated
+ * metadata.
  */
 
 #ifndef _WAV_DB_H
 #define _WAV_DB_H
 
-#include "wav_db_types.h"
 #include "sdk_errors.h"
+#include "wav_db_types.h"
 
 /**
  * @brief Initialize the WAV audio database.
