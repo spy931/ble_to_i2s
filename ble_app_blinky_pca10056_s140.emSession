@@ -2,7 +2,7 @@
 <session>
  <Bookmarks/>
  <Breakpoints groups="Breakpoints" active_group="Breakpoints">
-  <BreakpointListItem trigger="Execute" line="-1" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="0x2aa0c" group="Breakpoints" type="Breakpoint" state="2" filename="" useHWbreakpoint="false"/>
+  <BreakpointListItem trigger="Execute" line="0" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="0x2aa0c" group="Breakpoints" type="Breakpoint" state="3" filename="../MyProject" useHWbreakpoint="false"/>
   <BreakpointListItem trigger="" line="298" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="4" filename="../components/libraries/button/app_button.c" useHWbreakpoint="false"/>
   <BreakpointListItem trigger="" line="302" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="4" filename="../components/libraries/button/app_button.c" useHWbreakpoint="false"/>
   <BreakpointListItem trigger="" line="109" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="4" filename="../components/libraries/scheduler/app_scheduler.c" useHWbreakpoint="false"/>
@@ -31,6 +31,7 @@
   <ProjectSessionItem path="ble_app_blinky_pca10056_s140;ble_app_blinky_pca10056_s140;Application"/>
   <ProjectSessionItem path="ble_app_blinky_pca10056_s140;ble_app_blinky_pca10056_s140;Application;ble"/>
   <ProjectSessionItem path="ble_app_blinky_pca10056_s140;ble_app_blinky_pca10056_s140;Application;sound_player"/>
+  <ProjectSessionItem path="ble_app_blinky_pca10056_s140;ble_app_blinky_pca10056_s140;Application;wav_db"/>
   <ProjectSessionItem path="ble_app_blinky_pca10056_s140;ble_app_blinky_pca10056_s140;None"/>
   <ProjectSessionItem path="ble_app_blinky_pca10056_s140;ble_app_blinky_pca10056_s140;nRF_BLE"/>
   <ProjectSessionItem path="ble_app_blinky_pca10056_s140;ble_app_blinky_pca10056_s140;nRF_BLE_Services"/>
@@ -61,16 +62,15 @@
   <Watches active="1" update="Never">
    <Watchpoint expression="err_code" name="err_code" radix="-1" linenumber="0" filename="../MyProject"/>
    <Watchpoint expression="button_count" name="button_count" radix="-1" linenumber="0" filename="../MyProject"/>
-   <Watchpoint expression="" name="snd_ptr" radix="-1" linenumber="0" filename=""/>
-   <Watchpoint expression="wav_ptr" name="wav_ptr" radix="-1" linenumber="0" filename=""/>
-   <Watchpoint expression="data_size_to_play" name="data_size_to_play" radix="10" linenumber="0" filename=""/>
-   <Watchpoint expression="data_to_play_ptr" name="data_to_play_ptr" radix="10" linenumber="0" filename=""/>
-   <Watchpoint expression="i2s_tx_buffers" name="i2s_tx_buffers" radix="-1" linenumber="0" filename=""/>
-   <Watchpoint expression="config" name="config" radix="-1" linenumber="0" filename=""/>
-   <Watchpoint expression="&amp;data_to_play_ptr" name="&amp;data_to_play_ptr" radix="-1" linenumber="0" filename=""/>
-   <Watchpoint expression="params" name="params" radix="-1" linenumber="0" filename=""/>
-   <Watchpoint expression="conn_handle" name="conn_handle" radix="-1" linenumber="0" filename=""/>
-   <Watchpoint expression="packed_data" name="packed_data" radix="-1" linenumber="0" filename=""/>
+   <Watchpoint expression="wav_ptr" name="wav_ptr" radix="-1" linenumber="0" filename="../MyProject"/>
+   <Watchpoint expression="data_size_to_play" name="data_size_to_play" radix="10" linenumber="0" filename="../MyProject"/>
+   <Watchpoint expression="data_to_play_ptr" name="data_to_play_ptr" radix="10" linenumber="0" filename="../MyProject"/>
+   <Watchpoint expression="i2s_tx_buffers" name="i2s_tx_buffers" radix="-1" linenumber="0" filename="../MyProject"/>
+   <Watchpoint expression="config" name="config" radix="-1" linenumber="0" filename="../MyProject"/>
+   <Watchpoint expression="&amp;data_to_play_ptr" name="&amp;data_to_play_ptr" radix="-1" linenumber="0" filename="../MyProject"/>
+   <Watchpoint expression="params" name="params" radix="-1" linenumber="0" filename="../MyProject"/>
+   <Watchpoint expression="conn_handle" name="conn_handle" radix="-1" linenumber="0" filename="../MyProject"/>
+   <Watchpoint expression="packed_data" name="packed_data" radix="-1" linenumber="0" filename="../MyProject"/>
    <Watchpoint expression="p_acc" name="p_acc" radix="-1" linenumber="49" filename="components/ble/ble_services/ble_acc/ble_acc.c"/>
   </Watches>
  </Watch1>
@@ -85,10 +85,14 @@
  </Watch4>
  <Files>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="28" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="components/ble/ble_services/ble_acc/ble_acc.c" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="20" y="42" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="modules/ble_user/ble_user.c" selected="0" top="27" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="28" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="modules/sound_player/sound_player.c" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="42" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="modules/ble_user/ble_user.c" selected="0" top="27" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="3" y="98" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="modules/sound_player/sound_player.c" selected="1" top="84" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="23" useTextEdit="1" openedFrom="C:/Users/Spy/Desktop/MyProject/modules/sound_player/sound_player.c" useBinaryEdit="0" left="0" path="modules/sound_player/sound_player.h" selected="0" top="6" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="59" y="167" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="main.c" selected="1" top="153" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="186" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="main.c" selected="0" top="168" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="15" y="177" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="sdk_config.h" selected="0" top="153" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="46" y="44" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="modules/wav/wav_db.c" selected="0" top="5" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="C:/Users/Spy/Desktop/MyProject/modules/wav/wav_db.c" useBinaryEdit="0" left="0" path="sounds/sound1.h" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="48" y="21" useTextEdit="1" openedFrom="C:/Users/Spy/Desktop/MyProject/modules/wav/wav_db.c" useBinaryEdit="0" left="0" path="sounds/sound2.h" selected="0" top="0" codecName="Default"/>
  </Files>
  <ARMCrossStudioWindow activeProject="ble_app_blinky_pca10056_s140" fileDialogDefaultFilter="*" autoConnectTarget="J-Link" buildConfiguration="Release" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="C:/Users/Spy/Desktop/MyProject/modules/nrfx/drivers/src" debugSearchPath="" autoConnectCapabilities="3711"/>
 </session>

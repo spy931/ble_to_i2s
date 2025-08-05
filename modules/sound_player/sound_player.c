@@ -179,8 +179,8 @@ ret_code_t SoundPlayer_SetSampleRate(uint32_t sample_rate) {
       break;
 
     case 16000:
-      config.mck_setup = NRF_I2S_MCK_32MDIV21;
-      config.ratio = NRF_I2S_RATIO_96X;
+      config.mck_setup = NRF_I2S_MCK_32MDIV63;
+      config.ratio = NRF_I2S_RATIO_32X;
       break;
 
     case 22050:
@@ -189,8 +189,8 @@ ret_code_t SoundPlayer_SetSampleRate(uint32_t sample_rate) {
       break;
 
     case 32000:
-      config.mck_setup = NRF_I2S_MCK_32MDIV8;
-      config.ratio = NRF_I2S_RATIO_256X;
+      config.mck_setup = NRF_I2S_MCK_32MDIV16;
+      config.ratio = NRF_I2S_RATIO_64X;
       break;
 
     case 44100:
@@ -199,8 +199,8 @@ ret_code_t SoundPlayer_SetSampleRate(uint32_t sample_rate) {
       break;
 
     case 48000:
-      config.mck_setup = NRF_I2S_MCK_32MDIV21;
-      config.ratio = NRF_I2S_RATIO_32X;
+      config.mck_setup = NRF_I2S_MCK_32MDIV32;
+      config.ratio = NRF_I2S_RATIO_64X;
       break;
 
     default:

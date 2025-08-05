@@ -121,7 +121,6 @@
     <folder Name="nRF_BLE_Services">
       <file file_name="components/ble/ble_services/ble_snd/ble_snd.c" />
       <file file_name="components/ble/ble_services/ble_acc/ble_acc.c" />
-      <file file_name="components/ble/ble_services/ble_acc/ble_acc.h" />
     </folder>
     <folder Name="nRF_SoftDevice">
       <file file_name="components/softdevice/common/nrf_sdh.c" />
